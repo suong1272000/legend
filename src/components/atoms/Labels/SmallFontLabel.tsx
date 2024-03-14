@@ -2,13 +2,11 @@ import { CSSProperties } from "react";
 
 export type SmallFontLabelProps = {
     content: string;
+    style?: CSSProperties;
 };
-const SmallFontLabel = ({content}:SmallFontLabelProps) => {
-    const styles: CSSProperties = {
-		fontSize: "20px"
-	};
+const SmallFontLabel = ({content, style}:SmallFontLabelProps) => {
     return (
-        <p style={styles}>{content}</p>
+        <p style={style}>{content}</p>
     )
 }
 export default SmallFontLabel
