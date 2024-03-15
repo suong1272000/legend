@@ -1,17 +1,29 @@
 import { CSSProperties } from "react";
 
 export type HeadingLabelProps = {
-    content: string;
+    firstContent: string;
+    point: string;
+    secondContent: string;
 };
-const HeadingLabel = ({content}:HeadingLabelProps) => {
-    const styles:CSSProperties = {
+
+
+const HeadingLabel = ({firstContent,point,secondContent}:HeadingLabelProps) => {
+    const contentStyles:CSSProperties = {
+        color: "#fff",
         fontSize: "48px",
         fontWeight: "900",
         letterSpacing: "1.5px",
-        lineHeight: "72px"
+        lineHeight: "72px",
+        marginTop: "20px",
+    }
+    const pointStyles:CSSProperties = {
+        color: "#fe4879"
     }
     return (
-        <h2>{content}</h2>
+        <>
+            <h2 style={contentStyles}>{firstContent}</h2>
+            <h2 style={contentStyles}><span style={pointStyles}>{point}</span>{secondContent}</h2>
+        </>
     )
 }
 export default HeadingLabel

@@ -1,5 +1,6 @@
 import { CSSProperties } from "react";
 import TitleTextWrap from "./components/atoms/Wraps/TitleTextWrap";
+import EventContentTitle from "./components/atoms/Wraps/EventContentTitle";
 
 function App() {
   const styles:CSSProperties = {
@@ -17,6 +18,7 @@ function App() {
   return (
     <div className="App" style={styles}>
       <TitleTextWrap />
+      <EventContentTitle />
     </div>
   );
 }
