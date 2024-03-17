@@ -1,6 +1,6 @@
 import { CSSProperties } from "react";
 import TitleTextWrap from "./components/atoms/Wraps/TitleTextWrap";
-import EventContentTitle from "./components/atoms/Wraps/EventContentTitle";
+import Main from "./components/Main";
 
 function App() {
   const styles:CSSProperties = {
@@ -13,12 +13,13 @@ function App() {
     justifyContent: "space-between",
     position: "relative",
     width: "100%",
+    fontFamily: "Pretendard",
   }
 
   return (
     <div className="App" style={styles}>
       <TitleTextWrap />
-      <EventContentTitle />
+      <Main />
     </div>
   );
 }

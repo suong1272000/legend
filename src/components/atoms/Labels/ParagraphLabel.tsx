@@ -9,7 +9,7 @@ export type commonCSSType = {
 
 export type ParagraphLabelProps = {
     content: string;
-    common: commonCSSType
+    common: commonCSSType;
     style: CSSProperties;
 };
 
