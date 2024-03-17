@@ -1,6 +1,7 @@
 import { CSSProperties } from "react";
 import TitleTextWrap from "./components/atoms/Wraps/TitleTextWrap";
 import Main from "./components/Main";
+import BgTop from "./components/atoms/Background/BgTop";
 
 function App() {
   const styles:CSSProperties = {
@@ -13,11 +14,11 @@ function App() {
     justifyContent: "space-between",
     position: "relative",
     width: "100%",
-    fontFamily: "Pretendard",
   }
 
   return (
     <div className="App" style={styles}>
+      <BgTop />
       <TitleTextWrap />
       <Main />
     </div>

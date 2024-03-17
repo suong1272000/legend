@@ -15,6 +15,7 @@ const HeadingLabel = ({firstContent,point,secondContent}:HeadingLabelProps) => {
         letterSpacing: "1.5px",
         lineHeight: "72px",
         marginTop: "20px",
+        fontFamily: "VitroCore",
     }
     const pointStyles:CSSProperties = {
         color: "#fe4879"
@@ -22,7 +23,7 @@ const HeadingLabel = ({firstContent,point,secondContent}:HeadingLabelProps) => {
     return (
         <>
             <h2 style={contentStyles}>{firstContent}</h2>
-            <h2 style={contentStyles}><span style={pointStyles}>{point}</span>{secondContent}</h2>
+            <h2 style={{...contentStyles, marginTop: "-4px"}}><span style={pointStyles}>{point}</span>{secondContent}</h2>
         </>
     )
 }

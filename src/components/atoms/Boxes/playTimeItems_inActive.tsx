@@ -67,7 +67,6 @@ const PlayTimeItems_inActive = ({title,content,src}:PlayTimeItems_inActiveProps)
         fontSize: "14px",
         fontWeight: "400",
         lineHeight: "23px",
-        fontFamily: "Pretendard, sans-serif",
         marginBottom: "-25px"
     }
     const PgStyles:ParagraphLabelProps = {
