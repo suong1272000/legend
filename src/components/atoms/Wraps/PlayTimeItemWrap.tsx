@@ -7,6 +7,7 @@ const PlayTimeItemWrap = () => {
         justifyContent: "space-between",
         margin: "50px 0 120px",
         width: "960px",
+        fontFamily: "Pretendard, sans-serif",
     }
     return (
         <div style={styles}>

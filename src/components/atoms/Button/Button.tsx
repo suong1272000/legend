@@ -13,7 +13,7 @@ const Button = () => {
         lineHeight: "35px",
         width: "166px",
         position: "relative",
-        top: "100px",
+        top: "30px",
         cursor: "pointer",
     }
     return (
